@@ -14,6 +14,10 @@
 
 *Contributor numbers for Redox are hard to calculate as the project is now split across several repositories.*
 
+## What's going to happen with this?
+
+The goal of this document is to provide a comparison and brief overview of a handful of hobby OSes. 
+
 # Projects
 
 ## Haiku
@@ -50,12 +54,24 @@ The dozens of icons on the desktop show off KolibriOS's large assortment of nati
 
 ## HelenOS
 
-HelenOS is an academic research project.
+HelenOS is a multi-server microkernel OS with around a dozen active contributors. It's been the subject of academic research and is used by a few university programs to teach systems design.
+
+![A screenshot of HelenOS](images/helenos.png)
+
+HelenOS is technically impressive underneath, but doesn't have much to show for end-users.
 
 ## ToaruOS
 
-ToaruOS is my own project.
+ToaruOS is my own project, mostly a one-man effort. ToaruOS used to have an extensive Python desktop environment and several ports, but an effort to get rid of Newlib and build an OS entirely from scratch has led to some changes in the available software. Still, we have a port of GCC and Python 3 running atop our own ecosystem, including a robust window compositor, terminal emulator, and an increasing number of native applications.
+
+![A screenshot of ToaruOS](images/toaruos.png)
+
+ToaruOS's UI is meant to replicate the look and feel of a modern desktop, though the native font rasterizer can be a bit messy.
 
 ## Sortix
 
-Sortix aims to be a clean implementation of POSIX - with some fixes.
+Sortix aims to be a clean implementation of POSIX - with some fixes. Another one-man project, Sortix boasts a rather impressive API compatibility with existing GNU software and has a lot of great ports, but the UI needs some work.
+
+![A screenshot of Sortix](images/sortix.png)
+
+Stable builds of Sortix boot to a full-screen terminal, but this volatile build boots to an early windowing environment.
